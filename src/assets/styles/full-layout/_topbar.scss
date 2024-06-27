@@ -1,0 +1,32 @@
+@import '../variables';
+
+.collapsed-left {
+    left: $collapsed-sidebar;
+    position: relative;
+    transition: $transition
+}
+
+.expanded-left {
+    left: $expanded-sidebar;
+    position: relative;
+    transition: $transition
+}
+
+.topbar {
+    height: $header-height;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.4196078431), -2px -20px 20px rgba(0, 0, 0, 0.1215686275), 2px 5px 14px -5px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: $small-screen) {
+        position: relative;
+        box-shadow: unset;
+    }
+
+    .content {
+        height: 100%;
+    }
+}

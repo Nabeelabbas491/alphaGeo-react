@@ -1,0 +1,46 @@
+@import './variables';
+@import './input';
+@import './button';
+@import './spinner';
+@import './full-layout/index';
+
+.bg-teal-500 {
+    background-color: $primary-500;
+}
+
+.text-teal-500 {
+    color: $primary-500;
+}
+
+.text-error {
+    color: $error-500;
+}
+
+.border {
+    border: 1px solid $border-color;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.smaller-device-el {
+    display: none;
+
+    @media screen and (max-width: $small-screen) {
+        display: block;
+    }
+}
+
+.larger-device-el {
+    display: block;
+
+    @media screen and (max-width: $small-screen) {
+        display: none;
+    }
+}
+
+
+input[type=checkbox] {
+    accent-color: $primary-500;
+}

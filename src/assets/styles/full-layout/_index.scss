@@ -1,0 +1,53 @@
+@import '../variables';
+@import './sidebar';
+@import './topbar';
+
+.full-layout {
+
+    height: 100%;
+
+    .main-content {
+        position: relative;
+        top: 60px;
+        transition: $transition;
+
+        @media screen and (max-width: $small-screen) {
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .collapsed {
+        left: $collapsed-sidebar;
+        position: relative;
+        width: calc(100% - $collapsed-sidebar);
+
+        @media screen and (max-width: $small-screen) {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .expanded {
+        left: $expanded-sidebar;
+        position: relative;
+        width: calc(100% - $expanded-sidebar);
+
+        @media screen and (max-width: $small-screen) {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .footer {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.transition {
+    transition: $transition;
+}

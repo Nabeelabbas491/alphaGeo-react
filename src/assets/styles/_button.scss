@@ -1,0 +1,15 @@
+@import './variables';
+
+.button {
+    color: $primary-text-color;
+}
+
+.button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem $primary-300;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

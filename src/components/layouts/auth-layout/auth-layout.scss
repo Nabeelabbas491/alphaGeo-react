@@ -1,0 +1,57 @@
+.main-container {
+    background: url("../../../assets/images/auth//cover.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    @media screen and (max-width: 767px) {
+        height: 100% !important;
+    }
+
+    .content-container {
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            margin: 0 25px;
+        }
+
+        .logo-container {
+            background-color: rgba(112, 112, 112, 0.6);
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 767px) {
+                height: 150px;
+                padding: 1rem;
+
+                img {
+                    width: 90px;
+                }
+            }
+        }
+
+        .outlet {
+            background-color: #fff;
+            padding: 25px;
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
+}
